@@ -1,0 +1,13 @@
+//== Media queries breakpoints
+
+$screen-sm:                  640px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+
+$screen-md:                  768px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+
+$screen-ml:                  1000px !default;
+$screen-ml-min:              $screen-ml !default;
+$screen-desktop:             $screen-ml-min !default;

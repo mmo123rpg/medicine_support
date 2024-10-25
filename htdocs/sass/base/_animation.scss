@@ -1,0 +1,109 @@
+/*-- ヘッダー --*/
+#js-header.isScroll {
+  background-color: rgb(255,255,255);
+}
+.header_box {
+  @media screen and (max-width: $screen-md){
+    transition: right 300ms ease-out;
+  }
+}
+.header_box.is-show {
+  @media screen and (max-width: $screen-md){
+    right: 0;
+  }
+}
+/*-- メイン画像 --*/
+#js-main-img {
+  transform: scale(1.1);
+  transition: transform 3s ease;
+  @media screen and (max-width: $screen-md){
+
+  }
+}
+#js-main-img.isLoaded {
+  transform: scale(1);
+}
+
+/*-- フロートボタン --*/
+.content_btn-flow {
+  right: -100px;
+  transition: 0.2s linear;
+  @media screen and (max-width: $screen-md){
+    right: 11%;
+    bottom: -60px;
+  }
+}
+.flow_scroll {
+  right: 0px;
+  @media screen and (max-width: $screen-md){
+    right: 11%;
+    bottom: 0px;
+  }
+}
+/*-- ハンバーガーボタン --*/
+.hamburger {
+  .hamburger_1 {
+    @media screen and (max-width: $screen-md){
+      transition-property: opacity, filter;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+    }
+  }
+  .hamburger_2 {
+    @media screen and (max-width: $screen-md){
+      transition-property: opacity, filter;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+    }
+  }
+  .hamburger_3 {
+    @media screen and (max-width: $screen-md){
+      transition-property: opacity, filter;
+      transition-duration: 0.15s;
+      transition-timing-function: linear;
+    }
+  }
+}
+.hamburger.is-active {
+  .hamburger_1 {
+    @media screen and (max-width: $screen-md){
+      top: 19px;
+      transform: rotate(45deg);
+    }
+  }
+  .hamburger_2 {
+    @media screen and (max-width: $screen-md){
+      display: none;
+    }
+  }
+  .hamburger_3 {
+    @media screen and (max-width: $screen-md){
+      top: 19px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+/*-- 背景画像SP --*/
+.flg {
+  .content {
+    &_bg {
+      transition: all 0.6s ease;
+      opacity: 1;
+    }
+  }
+}
+/*-- Q&Aボタン --*/
+.question.open {
+  .question_term {
+    &:after {
+      top: 6px;
+      transform: rotate(135deg);
+      @media screen and (max-width: $screen-md){
+        top: -3px;
+      }
+    }
+  }
+  .question_discrp {
+    padding-bottom: 30px;
+  }
+}

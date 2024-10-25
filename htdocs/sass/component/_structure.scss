@@ -1,0 +1,73 @@
+.structure{
+    background-color: #85d8e2;
+    overflow-y:auto;
+    overflow-x:hidden;
+    // &__title{
+    //     font-size: 30px;
+    //     line-height: 37px;
+    //     letter-spacing: 1.8px;
+    // }
+    // &__subtitle{
+    //     font-size: 16px;
+    //     letter-spacing: 1.78px;
+    //     line-height:29px;
+    //     margin-bottom:40px;
+    //     @media screen and (max-width: $screen-md) {
+    //         margin-bottom:24px;
+    //     }
+    // }
+    &__text{
+        a{
+            color:white;
+            &:hover{
+                text-decoration:none;
+            }
+        }
+    }
+    &__graph{
+        margin-top:40px;
+        margin-bottom:50px;
+        @media screen and (max-width: $screen-md) {
+            margin-top:30px;
+            margin-bottom:6px;
+        }
+    }
+    &__media{
+        margin-bottom:40px;
+        border-bottom:1px dashed #fff;
+        @media screen and (max-width: $screen-md) {
+            flex-direction: column;
+            margin-top:24px;
+        }
+        &__left{
+            margin-right:50px;    
+            @media screen and (max-width: $screen-md) {
+                margin:0 auto;
+                padding-bottom:20px;
+            }
+        }
+        &__image{
+            width:138px;            
+        }
+        &__title{
+            font-size: 17px;
+            line-height: 28px;
+            letter-spacing: 1.19px;
+            margin-bottom:10px;
+            @media screen and (max-width: $screen-md) {
+                line-height:26px;
+            }
+        }
+        &__content{
+            margin-bottom:40px;
+            @media screen and (max-width: $screen-md) {
+                margin-bottom:30px;
+            }
+        }
+    }
+    &__textlast{
+        @media screen and (min-width: $screen-md) {
+            margin-top:10px;
+        }
+    }
+}

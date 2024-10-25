@@ -1,0 +1,21 @@
+.footer{
+    background-color: #78cad4;
+    border-bottom:1px solid white;
+    &:last-child{
+        border-bottom:none;
+    }
+    &__link{
+        font-size:13px;
+        padding:30px 190px;
+        width:100%;
+        justify-content: space-between;
+        @media screen and (max-width: $screen-md) {
+            padding: 25px 6px;
+            font-size:13px;
+        }
+    }
+    &__company{
+        font-size: 12px;
+        padding:20px 0;
+    }
+}

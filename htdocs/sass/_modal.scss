@@ -1,0 +1,148 @@
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal {
+    position: fixed;
+    width: 884px;
+    height: calc(100vh - 140px);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1041;
+    overflow-y:auto;
+    display: none;
+    @media screen and (max-width: $screen-md) {
+        width:calc(100% - 30px);
+        height: calc(100% - 30px);
+    }
+}
+.modal-content{
+    background:white;
+    padding:30px;
+    border-radius: 4px;
+    @media screen and (max-width: $screen-md) {
+        padding:15px;
+    }
+}
+.modal-close{
+    position:absolute;
+    width:25px;
+    height:25px;
+    right:32px;
+    top:32px;
+    background: none;
+    border: none;
+    cursor:pointer;
+    background-image: url(../img/modal-close.svg);
+    &:hover{
+        filter: contrast(10%);
+    }
+    @media screen and (max-width: $screen-md) {
+        top: 15px;
+        right: 15px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+}
+.modal-open {
+    overflow: hidden;
+    position:fixed;
+    left:0;
+    right:0;
+}
+
+.modal-backdrop.show {
+    opacity: .32;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+    opacity:.32;
+    cursor:pointer;
+}
+
+.contact{
+    &__title{
+        font-size: 20px;
+        letter-spacing: 2.22px;
+        margin-bottom:20px;
+        @media screen and (max-width: $screen-md) {
+            font-size: 17px;
+            letter-spacing: 1.89px;
+            margin-bottom:15px;
+        }
+    }
+    &__text{
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom:20px;
+        @media screen and (max-width: $screen-md) {
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom:15px;
+        }
+    }
+    &__rectangle{
+        border-radius: 4px;
+        background-color: #f0fbfc;
+        padding:20px;
+        margin-bottom:31px;
+        @media screen and (max-width: $screen-md) {
+            padding:15px;
+            margin-bottom:20px;
+        }
+        p{
+            font-size: 13px;
+            line-height: 25px;
+            margin-bottom:13px;
+            @media screen and (max-width: $screen-md) {
+                font-size: 13px;
+                line-height: 22px;
+                margin-bottom:18px;
+            }
+        }
+    }
+    &__personal{
+        font-size: 13px;
+        line-height: 26px;
+        margin-bottom:7px;
+    }
+    &__flex{
+        margin-bottom:10px;
+    }
+    &__badge{
+        border-radius: 4px;
+        background-color: #78cad4;
+        width:84px;
+        height:30px;
+        margin-right:20px;
+        @media screen and (max-width: $screen-md) {
+            width:60px;
+            margin-right:15px;
+        }
+    }
+    &__number{
+        font-size: 18px;
+        line-height: 28px;
+        @media screen and (max-width: $screen-md) {
+            font-size: 16px;
+        }
+    }
+    &__notice{
+        font-size: 13px;
+        line-height: 25px;
+        margin-left:104px;
+        @media screen and (max-width: $screen-md) {
+            margin-left:0;
+        }
+    }
+}
